@@ -223,6 +223,53 @@ a.cta-btn {
   color: #2e3280;
 }
 
+.sc-title {
+  color: #393e46;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  margin-bottom: 79px;
+  float: left;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+.contact-form-dv .form-group input, .contact-form-dv .form-group textarea {
+  border-color: #f0f1f2;
+}
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  color: #6a727f;
+  font-size: 14px;
+  padding: 0 30px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #d2d4d885;
+  border-radius: 5px;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 30px;
+  border: 2px solid rgba(238,238,238,0.30);
+  background-color: inherit;
+}
+.form-group textarea {
+  height: 100%;
+}
+.contact-form-dv button {
+  border: 0;
+}
+.contact-img img {
+  float: right;
+  margin: 0;
+}
+.contact-img {
+  position: relative;
+  top: 95px;
+}
 /* Scrollbar */
 
   ::-webkit-scrollbar {
