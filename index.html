@@ -188,13 +188,13 @@
                 <div class="col-lg-12">
                   <ul class="nav nav-tabs nav-justified tab-style--1 mt--30 border-0" role="tablist">
                     <li class="nav-item tab-style ">
-                      <a class="active" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="true">Our History</a>
+                      <a class="nav_tab active-nav-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="true">Our History</a>
                     </li>
                     <li class="nav-item">
-                      <a class="" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+                      <a class="nav_tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
                     </li>
                     <li class="nav-item">
-                      <a class="" data-toggle="tab" href="#support" role="tab" aria-controls="support" aria-selected="false">Support</a>
+                      <a class="nav_tab" data-toggle="tab" href="#support" role="tab" aria-controls="support" aria-selected="false">Support</a>
                     </li>
                   </ul>
                   
@@ -353,12 +353,20 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- <script>
-        $(".tab-style--1").find("a").click(function() {
+  <script>
+       /*  $(".tab-style--1").find("a").click(function() {
         $(".tab-style--1").find("a").removeClass("active");
         $(this).addClass("active");
+    }); */
+    $(document).ready(function() {
+    $(".nav_tab").click(function () {
+   
+    $(".nav_tab").removeClass("active-nav-tab");
+    $(this).addClass("active-nav-tab");
     });
-  </script> -->
+
+});
+  </script>
 
 </body>
 
