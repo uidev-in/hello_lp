@@ -21,7 +21,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Rubik",sans-serif;
+ /*  font-family: "Rubik",sans-serif; */
+ font-family: "Helvetica",sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -221,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #85c434;
   padding: 10px 0;
   transition: 0.3s;
   font-size: 14px;
@@ -247,8 +248,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav a:hover, .main-nav .active > a, .main-nav li:hover > a {
-  color: #000;
-  text-decoration: none;
+  color: #85c434;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .main-nav .drop-down ul {
@@ -437,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-size: 50px;
   margin-bottom: 35px;
+  font-family: "Helvetica",sans-serif;
 }
 #hero .content .inner p {
     line-height: 1.78;

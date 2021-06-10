@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../font/Helvetica-Bold.ttf");
+}
+
 .p-50{
   padding-top: 80px;
   padding-bottom: 80px;
@@ -71,10 +76,12 @@
 }
 .call-to-action--1 {
   box-shadow: 0 15px 40px rgb(89 69 230 / 5%);
-  background: url(../img/gradient-circle.png) 55% 100% no-repeat,linear-gradient(
--138deg
-,#020933,#06213a 50%,#09343f);
+  background: url(../img/gradient-circle.png) 55% 100% no-repeat;
   border-radius: 5px;
+  background-color: #0093E9;
+  background-image: linear-gradient(
+160deg
+, #1a73e8 0%, #051A38 100%);
 }
 .call-to-action--1 .inner {
   padding-left: 72px;
@@ -82,16 +89,19 @@
 .p--70{
   padding: 70px 0;
 }
+.p--50{
+  padding: 50px 0;
+}
 .call-to-action--1 .inner .content h3 {
   font-size: 34px;
   font-weight: 600;
   letter-spacing: 0;
-  margin-bottom: 4px;
+  margin-bottom: 1rem;
 }
-.call-to-action--1 .inner .content h5 {
+.call-to-action--1 .inner .content p {
   line-height: 1.78;
   color: #fff;
-  font-size: 18px;
+  margin-bottom: 1.5rem;
 }
 a.cta-btn {
   border-color: #ffffff;
@@ -293,7 +303,7 @@ a.cta-btn {
     width: 10px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #817dee;
+    background: #020c34;
   }
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
