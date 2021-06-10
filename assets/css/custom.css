@@ -7,7 +7,7 @@
   line-height: 1.34;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #2e3280;
+  color: #031035;
 }
 .icon-box--2 {
   padding: 37px 30px;
@@ -73,7 +73,7 @@
   box-shadow: 0 15px 40px rgb(89 69 230 / 5%);
   background: url(../img/gradient-circle.png) 55% 100% no-repeat,linear-gradient(
 -138deg
-,#5e60e7,#9c7af2 50%,#5e60e7);
+,#020933,#06213a 50%,#09343f);
   border-radius: 5px;
 }
 .call-to-action--1 .inner {
@@ -94,8 +94,8 @@
   font-size: 18px;
 }
 a.cta-btn {
-  border-color: #38cb89;
-  background: #38cb89;
+  border-color: #ffffff;
+  background: #85c434;
   font-size: 15px;
   font-weight: 600;
   padding: 0 36px;
@@ -119,7 +119,7 @@ a.cta-btn {
 }
 .section-title h2{
     line-height: 1.34;
-    color: #2e3280;
+    color: #031035;
     font-size: 48px;
     font-weight: 500;
 }
@@ -150,12 +150,12 @@ a.cta-btn {
 
 .tab-style--1 li a:hover{
   color: #fff!important;
-  background: #7c82fe;
+  background: #85c434;
   border-color: transparent;
 }
 .active-nav-tab{
   color: #fff!important;
-  background: #7c82fe!important;
+  background: #85c434!important;
   border-color: transparent;
   font-weight: bold!important;
 }
@@ -196,9 +196,9 @@ a.cta-btn {
     letter-spacing: 0;
     border-color: transparent;
     color: #fff;
-    background-image: linear-gradient(
-218deg
-,#5e61e7,#9c7af2 50%,#5e61e7);
+    background-image: linear-gradient( 
+      218deg
+       ,#09303e,#07253b 50%,#07273b);
     background-size: 200% auto;
     background-position: 0;
     padding: 0 36px;
@@ -222,7 +222,7 @@ a.cta-btn {
   font-weight: 400!important;
 }
 .heading-color{
-  color: #2e3280;
+  color: #031035;
 }
 
 .sc-title {
@@ -271,6 +271,21 @@ a.cta-btn {
 .contact-img {
   position: relative;
   top: 95px;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 767px){
+  #hero .content .inner h3 {
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+#hero .content .thumbnail {
+  margin-top: 20px;
+}
+#hero .content {
+  padding-top: 0;
+}
 }
 /* Scrollbar */
 
