@@ -293,8 +293,47 @@ a.cta-btn {
 #hero .content .thumbnail {
   margin-top: 20px;
 }
+#hero .content .thumbnail img{
+  width: 100%;
+}
 #hero .content {
   padding-top: 0;
+}
+.section-title h3.heading {
+  font-size: 32px;
+}
+.call-to-action--1 .inner {
+  padding-left: 20px;
+}
+.call-to-action--1 .inner .content h3 {
+  font-size: 30px;
+}
+.call-to-action--1 .thumbnail {
+  margin-top: -53px;
+  margin-right: 0px;
+  margin-bottom: -112px;
+  text-align: right;
+}
+.call-to-action--1 .thumbnail img{
+width: 100%;
+position: relative;
+bottom: 60px;
+}
+.section-title h2 {
+  font-size: 36px;
+}
+.tab-style--1 li a{
+float: left!important;
+padding: 20px 40px;
+min-width: 0;
+}
+.thumbnail img {
+  width: 100%;
+}
+.contact-img img {
+width: 100%;
+position: relative;
+bottom: 120px;
 }
 }
 /* Scrollbar */
