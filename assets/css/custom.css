@@ -19,7 +19,11 @@
   border-radius: 5px;
   background: #fff;
   margin-top: 30px;
+  -webkit-box-shadow: 0 4px 24px 0 rgb(34 41 47 / 5%); 
+  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 5%);
 }
+
+
 .icon-box--2 .content {
   display: flex;
   align-items: center;
@@ -253,7 +257,7 @@ a.cta-btn {
   width: 100%;
   color: #6a727f;
   font-size: 14px;
-  padding: 0 30px;
+  padding: 0 20px;
   height: 60px;
   line-height: 60px;
   border: 2px solid #d2d4d885;
@@ -264,7 +268,7 @@ a.cta-btn {
   height: 60px;
   color: #ffffff;
   font-size: 14px;
-  padding: 0 30px;
+  padding: 0 20px;
   border: 2px solid #d2d4d885;
   background-color: inherit;
 }
@@ -282,7 +286,25 @@ a.cta-btn {
   position: relative;
   top: 95px;
 }
-
+.modal-header{
+  background-image: linear-gradient( 
+    218deg
+     ,#09303e,#07253b 50%,#07273b);
+        background-size: 200% auto;
+        background-position: 0;
+    color: #fff;
+}
+button.close {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 2rem;
+  font-weight: 200;
+}
+button.close:hover{
+  color: #fff!important;
+  opacity: 0.5;
+  font-weight: 400;
+}
 /*Media Query*/
 @media only screen and (max-width: 767px){
   #hero .content .inner h3 {
