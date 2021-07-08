@@ -130,6 +130,9 @@ color:#165fc0!important;
 .pt--120 {
   padding-top: 120px;
 }
+.pt--200 {
+  padding-top: 200px;
+}
 .section-title {
   margin-top: -10px;
 }
@@ -149,6 +152,7 @@ color:#165fc0!important;
 }
 .comp-logo img{
   padding:0 1rem;
+  margin: -5px;
 }
 
 .tab-style--1 {
@@ -182,7 +186,7 @@ color:#165fc0!important;
 }
 .active-nav-tab{
   color: #fff!important;
-  background: #574cce!important;
+  background: #1355ac!important;
   border-color: transparent;
   font-weight: bold!important;
 }
@@ -374,7 +378,7 @@ bottom: 120px;
 }
 
 /* ---circle--- */
-.inCircle-tools {
+/* .inCircle-tools {
   padding: 180px 0;
 }
  .inCircle-tools .lg {
@@ -401,6 +405,53 @@ bottom: 120px;
 }
  .inCircle-tools li img {
   max-width: 100%;
+} */
+
+ .inCircle-tools {
+  padding: 180px 0;
+}
+
+ .inCircle-tools li img {
+  max-width: 100%;
+}
+
+ .inCircle-tools .has-centered {
+  z-index: 99;
+}
+
+ .inCircle-tools .lg {
+  height: 180px;
+  width: 180px;
+}
+
+ .inCircle-tools .md {
+  height: 114px;
+  width: 114px;
+}
+
+ .inCircle-tools .sm {
+  height: 82px;
+  width: 82px;
+}
+
+ .inCircle-tools .xs {
+  height: 72px;
+  width: 72px;
+}
+
+@media (max-width: 575px) {
+   .inCircle-tools {
+    padding: 0;
+    text-align: center;
+    margin: 40px 0;
+  }
+ .inCircle-tools li {
+    position: static !important;
+    height: 114px !important;
+    width: 114px !important;
+    padding: 0 15px;
+    margin: 10px;
+  }
 }
 
 
@@ -428,3 +479,35 @@ bottom: 120px;
   -moz-appearance: textfield;
   }
   
+  .bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url(https://elements-video-cover-images-0.imgix.net/files/239846438/White+Polygons_img.jpg?auto=compress%2Cformat&fit=min&h=563&w=1000&s=a1cba92ff0de0f1ef3d8b993ad53780f) no-repeat center center/cover;
+  }
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: linear-gradient(90deg,#d8d8d9,#f2f2f3); */
+    background-size: 3px 3px;
+    z-index: 2;
+  }
+  .rnd-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    color: #fff;
+  }
