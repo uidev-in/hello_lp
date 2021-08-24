@@ -33,6 +33,35 @@
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
+<style type="text/css">
+  .input-group-addon {
+   padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: transparent;
+    width: 45px;
+    padding-top: 23px;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+    height: 59px;
+    position: absolute;
+}
+
+#modalContactForm .form-group input{
+    width: 100%;
+    height: 60px;
+    /* color: #ffffff; */
+    font-size: 14px;
+    padding: 0px 40px;
+    border: 2px solid #d2d4d885;
+    background-color: inherit;
+}
+</style>
+
 <body>
 
   <!-- ======= Top Bar ======= -->
@@ -479,7 +508,7 @@
 										<input type="text" name="name" class="form-control name" placeholder="Full Name" required="">
 									</div><!--form-group end-->
 									<div class="form-group">
-										    <input type="number" name="number" class="form-control number" placeholder="Enter Your Phone No." required="" maxlength = "10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+										    <input type="number" name="number" class="form-control number" placeholder="Enter Your Phone No." required="">
 
 									</div><!--form-group end-->
 									<div class="form-group arw-down">
@@ -590,7 +619,7 @@
     <div class="modal-content">
       <form method="post" action="#" id="contact-form">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Leave us a message</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Step 1</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -601,10 +630,14 @@
                 <div class="response"></div>
              </div>
           <div class="form-group">
+            <span class="input-group-addon"><i class="la la-user"></i></span>
+
             <input type="text" name="name" class="form-control name" placeholder="Enter Your Full Name" required="">
           </div><!--form-group end-->
           <div class="form-group">
-            <input type="text" name="number" class="form-control number" placeholder="Enter Your Phone No." required=""  maxlength = "10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+             <span class="input-group-addon">+91</span>
+            <input type="text" name="number" class="form-control number" id='txtPhone' placeholder="Enter 10 Digit Number." maxlength="10">
+            <span id="spnPhoneStatus"></span>
           </div><!--form-group end-->
           <div class="form-group arw-down">
               <select class="form-control" id="exmyb_form">
@@ -617,8 +650,8 @@
         
           
       </div>
-      <div class="modal-footer d-flex justify-content-center border-0">
-        <button type="button" class="ar-button" id="submit">Send Message<span></span></button>
+      <div class="modal-footer d-flex justify-content-center border-0 pt-0">
+        <button type="button" class="ar-button" id="submit">Next Step<span></span></button>
       </div>
       
     </form>
@@ -694,6 +727,38 @@ function inCircleInit() {
             });
 
          });
+
+
+
+
+         // validation
+
+         
+$(document).ready(function() {
+    $('#txtPhone').blur(function(e) {
+        if (validatePhone('txtPhone')) {
+          console.log('xdgfchgvjhbkjn')
+            $('#spnPhoneStatus').html('Valid Mobile Number');
+            $('#spnPhoneStatus').css({'display':'none','color':'green'});
+        }
+        else {
+            $('#spnPhoneStatus').html('Invalid Mobile Number');
+            $('#spnPhoneStatus').css('color', 'red');
+        }
+    });
+});
+
+function validatePhone(txtPhone) {
+    var a = document.getElementById(txtPhone).value;
+    var filter = /[1-9]{1}[0-9]{9}/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
   </script>
 
 </body>
