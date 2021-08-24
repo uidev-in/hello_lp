@@ -311,11 +311,11 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                   <ul class="nav nav-tabs nav-justified tab-style--1 mt--30 border-0" role="tablist">
-                    <li class="nav-item tab-style ">
-                      <a class="nav_tab active-nav-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="true" style="float: right;">Hello</a>
+                    <li class="nav-item tab-style select_val">
+                      <a class="nav_tab active-nav-tab" data-toggle="tab" data-select="hello" href="#history" role="tab" aria-controls="history" aria-selected="true" style="float: right;">Hello</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav_tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false" style="float: left;">Hello <span class="text-danger">Pro</span></a>
+                    <li class="nav-item select_val">
+                      <a class="nav_tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false" style="float: left;" data-select="hello pro">Hello <span class="text-danger">Pro</span></a>
                     </li>
                     
                   </ul>
@@ -479,20 +479,18 @@
 										<input type="text" name="name" class="form-control name" placeholder="Full Name" required="">
 									</div><!--form-group end-->
 									<div class="form-group">
-										<input type="email" name="email" class="form-control email" placeholder="Email Address" required="">
+										    <input type="number" name="number" class="form-control number" placeholder="Enter Your Phone No." required="" maxlength = "10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+
 									</div><!--form-group end-->
 									<div class="form-group arw-down">
 										<select class="form-control" id="exampleFormControlSelect1">
-									    	<option>What specialty are you looking for?</option>
-									      	<option>What specialty are you looking for?</option>
-									      	<option>What specialty are you looking for?</option>
-									      	<option>What specialty are you looking for?</option>
-									      	<option>What specialty are you looking for?</option>
+									    	<option value="choose option" selected>--Choose Option--</option>
+									      	<option value="Hello">Hello</option>
+									      	<option value="Hello Pro">Hello Pro</option>
+									      
 									    </select>
 									</div>
-									<div class="form-group">
-										<textarea name="message" class="form-control" placeholder="Write us your message"></textarea>
-									</div><!--form-group end-->
+				
 									<button type="button" class="ar-button" id="submit">Send Message<span></span></button>
 								</form>
 							</div><!--contact-form-dv end-->
@@ -603,23 +601,20 @@
                 <div class="response"></div>
              </div>
           <div class="form-group">
-            <input type="text" name="name" class="form-control name" placeholder="Full Name" required="">
+            <input type="text" name="name" class="form-control name" placeholder="Enter Your Full Name" required="">
           </div><!--form-group end-->
           <div class="form-group">
-            <input type="email" name="email" class="form-control email" placeholder="Email Address" required="">
+            <input type="text" name="number" class="form-control number" placeholder="Enter Your Phone No." required=""  maxlength = "10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
           </div><!--form-group end-->
           <div class="form-group arw-down">
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>What specialty are you looking for?</option>
-                  <option>What specialty are you looking for?</option>
-                  <option>What specialty are you looking for?</option>
-                  <option>What specialty are you looking for?</option>
-                  <option>What specialty are you looking for?</option>
+              <select class="form-control" id="exmyb_form">
+                        <!-- <option value="choose option" >--Choose Option--</option> -->
+                          <option value="Hello">Hello</option>
+                          <option value="Hello Pro">Hello Pro</option>
+                        
               </select>
           </div>
-          <div class="form-group">
-            <textarea name="message" class="form-control" placeholder="Write us your message"></textarea>
-          </div><!--form-group end-->
+        
           
       </div>
       <div class="modal-footer d-flex justify-content-center border-0">
@@ -680,6 +675,25 @@ function inCircleInit() {
 			}
 		}
 	}
+  </script>
+
+  <script type="text/javascript">
+    // $(document).ready(function() {
+
+
+         $('.select_val a').click(function() {
+           var click_value = $(this).data("select");
+          
+            console.log('hey sourabh',click_value);
+            $('select#exmyb_form option:selected').removeAttr('selected');
+            $("select#exmyb_form option").each(function(){
+              if ($(this).val() == click_value)
+                console.log('hey sourabh2',click_value);
+                $(this).attr("selected","selected");
+               
+            });
+
+         });
   </script>
 
 </body>
