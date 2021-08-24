@@ -265,7 +265,7 @@ color:#165fc0!important;
   float: left;
 }
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .contact-form-dv .form-group input, .contact-form-dv .form-group textarea {
   border-color: #f0f1f2;
@@ -488,7 +488,7 @@ bottom: 120px;
   }
   video {
     min-width: 100%;
-    min-height: 100vh;
+    max-height: 130vh;
     z-index: 1;
   }
   .overlay {
